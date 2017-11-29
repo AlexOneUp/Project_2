@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Required metatag and stylesheet-->
+	<title>Locations</title>
+
+	<!--Required metatag and stylesheet-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--Custom styles here-->
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		#locationImage img {
+			width: 50%;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+
+		#locationInfo {
+			padding-left: 10%;
+		}
+
+		#locationInfo h1 {
+			font-weight: bold;
+			font-size: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar navbar-default affix-top">
+			<a href='index.html'><img id='ECP' src='img/E%20C%20P.png'></a>
+			<div class="dropdown"><img src=''>
+				<button onclick="myFunction()" class="dropbtn"><div id='icon'><p id="menuIcon" ></p><p id="menuIcon"></p><p id="menuIcon"></p></div></button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="Offers.html">Offers</a>
+					<a href="Locations.html">Location</a>
+				</div>
+			</div>
+			<a><img id='authorizedRetailer' src="img/LOGO.png"></a>
+		</nav>
+	</header>
+	<div id="whiteSpace"></div>
+
+	<div id='locationImage'>
+		<a href="https://www.google.com/maps/place/Trump+Tower/@40.7624284,-73.973794,15z/data=!4m5!3m4!1s0x0:0x8e9cfc7444d8f876!8m2!3d40.7624284!4d-73.973794" target="_blank"><img src="img/Layer%200.png"></a>
+	</div>
+	<div id='locationInfo'>
+		<h1>Location</h1>
+		<p>Dump Tower</p>
+		<p>420 Dump Tower</p>
+		<p>New York, New York 10042</p>
+		<h1>Store Hours</h1>
+		<p>Monday - Saturday: 9:00am - 8:00pm</p>
+		<p>Sunday: 10:00am - 6:00pm</p>
+		<p><a href="https://www.google.com/maps/place/Trump+Tower/@40.7624284,-73.973794,15z/data=!4m5!3m4!1s0x0:0x8e9cfc7444d8f876!8m2!3d40.7624284!4d-73.973794" target="_blank">View Map</a></p>
+
+	</div>
+	<div id='whiteSpace'></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--Custom script here-->
+	<script type="text/javascript">
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
+</body>
+
+<footer>
+	<div class='container'>
+		<div class='icons'><a href='https://en.wikipedia.org/wiki/Social_media' target="_blank"><img src='img/social_media_icons.png'></a>
+			<p>Follow Us on Social Media!</p>
+		</div>
+		<div class='footerlogo'>
+			<img src='img/E%20C%20P.png'>
+			<p>Copyright @ 2017-2017 Executive Cellular Phones
+			</p>
+			<p>All Rights Reserved</p>
+		</div>
+	</div>
+</footer>
+
+
+</html>
