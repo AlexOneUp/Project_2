@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+
+	<!--Required metatag and stylesheet-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--Custom styles here-->
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		video {
+			padding-left: 10%;
+			padding-right: 10%;
+			width: 100%;
+			background-color: transparent;
+		}
+
+		#myCarousel img {
+			width:100%;
+		}
+		.carousel-indicators .active {
+			background-color: #ee029d;
+		}
+
+		#myCarousel {
+			display: inline-block;
+			align-content: center;
+			width: 100%;
+		}
+
+		#carouselContainer {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar navbar-default affix-top">
+			<a href='index.html'><img id='ECP' src='img/E%20C%20P.png'></a>
+			<div class="dropdown"><img src=''>
+				<button onclick="myFunction()" class="dropbtn"><div id='icon'><p id="menuIcon" ></p><p id="menuIcon"></p><p id="menuIcon"></p></div></button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="Offers.html">Offers</a>
+					<a href="Locations.html">Location</a>
+				</div>
+			</div>
+			<a><img id='authorizedRetailer' src="img/LOGO.png"></a>
+		</nav>
+	</header>
+	<!--Your HTML here-->
+	<nav>
+<div id='whiteSpace'></div>
+		<!--carousel-->
+
+		<div class="fluid-container">
+			<div id="carousel-example-generic" class="carousel slide">
+				<!-- indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				</ol>
+				<!-- wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<!--slide 1-->
+					<div class="item active">
+						<video autoplay loop>
+					<source src='vids/iPhone%20X%20Preview.mp4' type='video/mp4'></video>
+						<div class="carousel-caption">
+						</div>
+					</div>
+					<!--slide 2-->
+					<div class="item">
+						<video autoplay loop>
+					<source src='vids/iPhone%208.mp4' type='video/mp4'></video>
+						<div class="carousel-caption">
+						</div>
+					</div>
+					<!--slide 3-->
+					<div class="item">
+						<video autoplay loop>
+					<source src='vids/Samsung%20Note%208%20Preview.mp4' type='video/mp4'></video>
+						<div class="carousel-caption">
+						</div>
+					</div>
+					<div class="item">
+						<video autoplay loop>
+					<source src='vids/LG%20V30%20Preview%202X%20Fast.mp4'></video>
+						<div class="carousel-caption">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</nav>
+
+	<div id="carouselContainer">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/Products/iphoneX.png" alt="Iphone8">
+					<div class="carousel-caption">
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/Products/iPhone8.png" alt="LGv30">
+					<div class="carousel-caption">
+
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/Products/lgv30.png" alt="GalaxyS8Plus">
+					<div class="carousel-caption">
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="img/Products/Note8.png" alt="GalaxyS8">
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" data-target="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+			<a class="right carousel-control" data-target="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+		</div>
+	</div>
+
+	<!--Required scripts-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--Custom script here-->
+	<script type="text/javascript">
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
+</body>
+
+<footer>
+	<div class='container'>
+		<div class='icons'><a href='https://en.wikipedia.org/wiki/Social_media' target="_blank"><img src='img/social_media_icons.png'></a>
+			<p>Follow Us on Social Media!</p>
+		</div>
+		<div class='footerlogo'>
+			<img src='img/E%20C%20P.png'>
+			<p>Copyright @ 2017-2017 LOGO
+			</p>
+			<p>All Rights Reserved</p>
+		</div>
+	</div>
+</footer>
+
+</html>
