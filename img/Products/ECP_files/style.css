@@ -1,0 +1,111 @@
+
+header {
+	position: fixed;
+	color: #fff;
+	width: 100%;
+	z-index: 9999999999999;
+}
+
+.fluid-container {
+	padding-top: 5%;
+	background-position: bottom;
+}
+
+video {
+	max-width: 100% !important;
+}
+
+.carousel-indicators .active {
+	background-color: #ee029d;
+}
+
+
+nav .collapse navbar-collapse {
+	background-color: #ee029d;
+}
+
+
+.nav ul {
+	font-family: 'Lato', sans-serif;
+	list-style: none;
+}
+
+.nav li {
+	float: left;
+	width: 80px;
+	height: 50px;
+	line-height: 40px;
+}
+
+.nav ul li a:hover {
+	color: #000;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.fluid-container #carousel-example-generic ol li:active,
+.fluid-container #carousel-example-generic ol li:hover, {
+	color: pink;
+
+}
+		.carousel-inner>.item>video {
+			margin: 0px auto;
+			width:100%;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: #363535;
+}
+
+.logo {
+	float: left;
+	padding-left: 10%;
+	padding-top: 5px;
+	color: white;
+}
+
+footer .footerlogo {
+	float: left;
+	padding-left: 10%;
+	padding-top: 50px;
+	color: white;
+}
+
+footer .footerlogo p {
+	font-size: 12px;
+}
+
+footer .icons p {
+	color: white;
+	padding-top: 5px;
+}
+
+.icons {
+	float: right;
+	padding-top: 50px;
+	padding-right: 10%
+}
+
+.footercontent {
+	color: white;
+	text-align: center;
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
